@@ -1,0 +1,17 @@
+<!--pages/user/user.wxml-->
+<view>
+  <block>
+    <image src='{{userInfo.avatarUrl}}'></image>
+    <view class="nickname">{{userInfo.nickName}}</view>
+  </block>
+  <block wx:if="{{!hasUserInfo}}">
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindtap="getUserProfile">
+        授权登录
+    </button>
+  </block>
+  <block wx:else>
+    <button class='bottom' type="warn" style="background-color:white;" bindtap="exit">退出登录</button>
+    <button class="bottom" type='primary' bindtap="enterindex">进入咨询</button>
+  </block>
+    
+</view>

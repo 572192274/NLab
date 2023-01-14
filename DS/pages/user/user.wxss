@@ -1,0 +1,23 @@
+/* pages/user/user.wxss */
+page{
+  text-align: center;
+  background-color:#fffff5;
+}
+
+image {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 300rpx;
+  margin-top: 50px;
+}
+.nickname{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.bottom {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}

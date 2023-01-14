@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<button bindtap="wc_repo" class="medical" style="width: 75%;height: 90px;">
+  <view>医 疗 咨 询</view>
+  <view class="futitle">胃 肠 疾 病</view>
+</button>
+<button bindtap="medical_repo" class="medical" style="width: 75%;height: 90px;">
+  <view>医 疗 咨 询</view>
+  <view class="futitle">全 科</view>
+</button>
+<button bindtap="emo_repo" class="emo" style="width: 75%;height: 90px;">
+  <view>情 感 咨 询</view>
+  <view class="futitle">闲 聊</view>
+</button>
+<button bindtap="zfqlg_repo" class="emo" style="width: 75%;height: 90px;">
+  <view>情 感 咨 询</view>
+  <view class="futitle">情 侣</view>
+</button>
+

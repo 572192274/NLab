@@ -1,0 +1,29 @@
+/**index.wxss**/
+.medical{
+  margin: 10px 0px;
+  color: white;
+  background-color: #09A3DC;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgb(60,195,245);
+  text-align: center;
+  font-size: 25px;
+}
+.medical:active{
+  background-color: rgb(60,195,245);
+}
+.futitle{
+  font-size: 15px;
+  padding-top: 20px;
+}
+.emo{
+  margin: 10px;
+  color: white;
+  background-color: #09A3DC;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px rgb(60,195,245);
+  text-align: center;
+  font-size: 25px;
+}
+.emo:active{
+  background-color: rgb(60,195,245);
+}
