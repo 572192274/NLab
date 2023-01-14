@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AnnotationWindow</class>
+ <widget class="QMainWindow" name="AnnotationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>标注工具</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="dialog_text">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>1200</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>90</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="antl_widget">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>200</y>
+      <width>700</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <widget class="QWidget" name="page"/>
+    <widget class="QWidget" name="page_2"/>
+   </widget>
+   <widget class="QWidget" name="top_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1200</width>
+      <height>110</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>110</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>110</height>
+     </size>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>0</y>
+       <width>200</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 24pt &quot;隶书&quot;;</string>
+     </property>
+     <property name="text">
+      <string>标注平台</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_export">
+     <property name="geometry">
+      <rect>
+       <x>767</x>
+       <y>51</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>导出数据</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="index_text">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>54</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>索引</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_test">
+     <property name="geometry">
+      <rect>
+       <x>624</x>
+       <y>51</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>审核数据</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_annotation">
+     <property name="geometry">
+      <rect>
+       <x>481</x>
+       <y>51</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>标注数据</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_import">
+     <property name="geometry">
+      <rect>
+       <x>338</x>
+       <y>51</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>导入数据</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="data_path">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>54</y>
+       <width>133</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>py/test.txt</string>
+     </property>
+     <property name="placeholderText">
+      <string>原始数据路径</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_back">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="toolTipDuration">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rs.qrc">
+       <normaloff>:/login/img/login/logo.ico</normaloff>:/login/img/login/logo.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>60</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="username">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>70</y>
+       <width>70</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTipDuration">
+      <number>0</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 15pt &quot;方正舒体&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_finish">
+     <property name="geometry">
+      <rect>
+       <x>910</x>
+       <y>80</y>
+       <width>130</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>都提交完毕后点击哦</string>
+     </property>
+     <property name="toolTipDuration">
+      <number>0</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string>完成标注</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_explain">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>0</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>标注规范</string>
+     </property>
+     <property name="toolTipDuration">
+      <number>0</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rs.qrc">
+       <normaloff>:/annowin/img/annowin/explain.png</normaloff>:/annowin/img/annowin/explain.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_bili">
+     <property name="geometry">
+      <rect>
+       <x>1130</x>
+       <y>0</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>标注过程</string>
+     </property>
+     <property name="toolTipDuration">
+      <number>0</number>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="rs.qrc">
+       <normaloff>:/annowin/img/annowin/bili.png</normaloff>:/annowin/img/annowin/bili.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dialogNum">
+     <property name="geometry">
+      <rect>
+       <x>1100</x>
+       <y>80</y>
+       <width>72</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QProgressBar" name="data_progress">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>670</y>
+      <width>1181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;楷体&quot;;</string>
+    </property>
+    <property name="maximum">
+     <number>325</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="dialog_list">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>500</width>
+      <height>380</height>
+     </rect>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::CustomContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 13pt &quot;等线&quot;;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rs.qrc"/>
+ </resources>
+ <connections/>
+</ui>

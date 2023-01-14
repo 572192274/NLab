@@ -1,0 +1,51 @@
+<RCC>
+    <qresource prefix="/login">
+        <file>img/login/top.png</file>
+        <file>qss/login.qss</file>
+        <file>img/login/check.png</file>
+        <file>img/login/pass.png</file>
+        <file>img/login/user.png</file>
+        <file>img/login/login.png</file>
+        <file>img/login/logo.ico</file>
+        <file>img/login/emojo/0.png</file>
+        <file>img/login/emojo/1.png</file>
+        <file>img/login/emojo/2.png</file>
+        <file>img/login/emojo/3.png</file>
+        <file>img/login/emojo/4.png</file>
+        <file>img/login/emojo/5.png</file>
+        <file>img/login/emojo/6.png</file>
+        <file>img/login/emojo/7.png</file>
+        <file>img/login/emojo/8.png</file>
+        <file>img/login/emojo/9.png</file>
+        <file>img/login/emojo/10.png</file>
+        <file>img/login/emojo/11.png</file>
+        <file>img/login/emojo/12.png</file>
+        <file>img/login/emojo/13.png</file>
+        <file>img/login/emojo/14.png</file>
+        <file>img/login/emojo/15.png</file>
+        <file>img/login/emojo/16.png</file>
+        <file>img/login/emojo/17.png</file>
+        <file>img/login/emojo/18.png</file>
+    </qresource>
+    <qresource prefix="/antl">
+        <file>img/antl/delete.png</file>
+        <file>img/antl/finish.png</file>
+        <file>qss/antl.qss</file>
+        <file>qss/annowin.qss</file>
+        <file>img/antl/add.png</file>
+        <file>img/antl/down.png</file>
+        <file>img/antl/up.png</file>
+    </qresource>
+    <qresource prefix="/annowin">
+        <file>qss/annowin.qss</file>
+        <file>img/annowin/doctor.png</file>
+        <file>img/annowin/patient.png</file>
+        <file>img/annowin/explain.png</file>
+        <file>img/annowin/bilibili.png</file>
+        <file>img/annowin/bili.png</file>
+        <file>img/annowin/ma.png</file>
+    </qresource>
+    <qresource prefix="/select">
+        <file>qss/select.qss</file>
+    </qresource>
+</RCC>

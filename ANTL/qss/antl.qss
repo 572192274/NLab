@@ -1,0 +1,155 @@
+/*设置滚动条样式*/
+QScrollBar:vertical {
+     width: 10px;
+	 border: 0px;
+ }
+ 
+QScrollBar:vertical:hover {
+	background: rgb(221,225,228);
+}
+
+
+QScrollBar::handle:vertical {
+	background: rgb(198,201,203);
+	border-radius:5px;
+}
+
+
+QScrollBar::add-line:vertical {
+	border: 0px;
+	height: 0px;
+}
+
+QScrollBar::sub-line:vertical {
+	border:0px;
+	height: 0px;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	border: 0px;
+
+}
+
+QScrollBar::add-page:vertical{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+QScrollBar::sub-page:vertical {
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+QScrollBar::add-page:vertical:hover, QScrollBar::sub-page:vertical:hover {
+	background: rgb(221,225,228);
+}
+
+/********************************/
+ 
+QScrollBar:horizontal {
+	border: 0px;
+	height: 10px;
+}
+
+
+QScrollBar::handle:horizontal {
+	background: rgba(69,124,216,150);
+  
+}
+
+
+QScrollBar::add-line:horizontal {
+	border: 0px;
+	width: 0px;
+}
+
+QScrollBar::sub-line:horizontal {
+	border:0px;
+	width: 0px;
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+	border: 0px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background: rgba(0,0,0,0);
+}
+ 
+/*滚动条样式定义结束*/
+#antl_list{
+	border-left:1px solid #09A3DC;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+}
+QLabel{
+	font: 11pt "楷体";
+}
+/*下拉框样式*/
+QComboBox{
+	border:none;
+	border-radius:3px;
+	padding:1px 18px 1px 3px;
+	color:#fff;
+	background:#09A3DC;
+	font: 10pt "楷体";
+}
+
+QComboBox::drop-down{
+	border:none;
+
+}
+/* 越过下拉框样式 */
+QComboBox::drop-down:hover {
+	background-color:rgb(60,195,245);
+}
+QComboBox::down-arrow{
+	image:url(:antl/img/antl/down.png) 1;
+}
+QComboBox QAbstractItemView{
+	outline:0px solid white;
+}
+QComboBox QAbstractItemView::item{
+	background-color:#09A3DC;
+	color:#fff;
+	height:30px;
+	border-bottom:1px solid white;
+
+}
+QComboBox QAbstractItemView::item:hover{
+	background-color:rgb(60,195,245);
+	color:#fff;
+}
+
+/*QSpinBox样式*/
+QSpinBox{
+	border-width:none;
+	border-radius:3px;
+	color:#fff;
+	background:#09A3DC;
+}
+QSpinBox::up-button {
+	subcontrol-origin: border;
+	subcontrol-position: top right; /* position at the top right corner */
+
+	width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+	border-image: url(:antl/img/antl/up.png) 1;
+	border-width: 1px;
+}
+QSpinBox::down-button {
+	subcontrol-origin: border;
+	subcontrol-position: bottom right; /* position at the top right corner */
+
+	width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+	border-image: url(:antl/img/antl/down.png) 1;
+	border-width: 1px;
+	
+}
+QSpinBox::up-button:pressed{
+	background-color:rgb(60,195,245);
+}
+QSpinBox::down-button:pressed{
+	background-color:rgb(60,195,245);
+}
+
+

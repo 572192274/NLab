@@ -1,0 +1,159 @@
+/*设置滚动条样式*/
+QScrollBar:vertical {
+     width: 10px;
+	 border: 0px;
+ }
+ 
+QScrollBar:vertical:hover {
+	background: rgb(221,225,228);
+}
+
+
+QScrollBar::handle:vertical {
+	background: rgb(198,201,203);
+	border-radius:5px;
+}
+
+
+QScrollBar::add-line:vertical {
+	border: 0px;
+	height: 0px;
+}
+
+QScrollBar::sub-line:vertical {
+	border:0px;
+	height: 0px;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	border: 0px;
+
+}
+
+QScrollBar::add-page:vertical{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+QScrollBar::sub-page:vertical {
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+QScrollBar::add-page:vertical:hover, QScrollBar::sub-page:vertical:hover {
+	background: rgb(221,225,228);
+}
+
+/********************************/
+ 
+QScrollBar:horizontal {
+	border: 0px;
+	height: 10px;
+}
+
+
+QScrollBar::handle:horizontal {
+	background: rgba(69,124,216,150);
+  
+}
+
+
+QScrollBar::add-line:horizontal {
+	border: 0px;
+	width: 0px;
+}
+
+QScrollBar::sub-line:horizontal {
+	border:0px;
+	width: 0px;
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
+	border: 0px;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	background: rgba(0,0,0,0);
+}
+ 
+/*滚动条样式定义结束*/
+#top_widget{
+	/*background-color: rgb(22, 154, 218);*/
+	background-color: #EBF2F9;
+}
+#dialog_text{
+	background-color: rgb(237, 234, 232);
+	border-bottom:2px solid #09A3DC;
+}
+#dialog_list{
+	background-color: rgb(225, 223, 222);
+}
+#dialog_list::item{
+	margin-top:5px;
+}
+/*输入框基本样式*/
+QLineEdit{
+	
+	border:1px solid rgb(209,209,209);
+	height:28px;
+	
+	padding-left:6px;
+	padding-right:6px;
+	
+}
+
+/*输入框悬停样式*/
+QLineEdit:hover{
+	
+	border:1px solid rgb(21,131,221)
+	
+}
+/*按钮样式*/
+QPushButton{
+	border-radius:4px;
+	border:none;
+	background-color: #09A3DC;
+	color:#fff;
+}
+
+/*按钮鼠标悬停样式*/
+QPushButton:hover{
+	background-color:rgb(60,195,245);
+}
+#btn_back{
+	border-radius:35px;
+	border:none;
+	background-color:#09A3DC;
+}
+#btn_back:hover{
+	background-color:rgb(60,195,245);
+}
+#btn_explain{
+	border-radius:35px;
+	border:none;
+	background-color:transparent;
+}
+#btn_explain:hover{
+	background-color:rgb(60,195,245);
+}
+#btn_bili{
+	border-radius:35px;
+	border:none;
+	background-color:transparent;
+}
+#btn_bili:hover{
+	background-color:rgb(60,195,245);
+}
+/*设置进度条样式*/
+#data_progress{
+	font:9pt;
+	color:#000;
+	border-radius:5px;
+	text-align:center;
+	border:1px solid #E8EDF2;
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(180, 180, 180);
+}
+QProgressBar:chunk{
+	border-radius:5px;
+	background-color:#09A3DC;
+}
